@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivitySplash">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cat2"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:alpha="0.6"
+
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/back_grad"
+        android:alpha="0.5"
+        />
+    <TextView
+        android:id="@+id/splash_LBL_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="50sp"
+        android:text="puzzles"
+        android:textColor="@color/white"
+        />
+    <ImageView
+        android:id="@+id/splash_IMG_logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_above="@id/splash_LBL_name"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_logo">
+
+    </ImageView>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/splash_BTN_start"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="@string/start"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:cornerRadius="50dp"
+        app:icon="@drawable/ic_start"
+        app:iconTint="@color/white"
+        app:strokeColor="@color/white" />
+
+
+
+
+</RelativeLayout>

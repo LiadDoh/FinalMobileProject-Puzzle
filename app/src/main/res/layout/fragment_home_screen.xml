@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentHomeScreen">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back_home2"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
+        <ImageView
+            android:id="@+id/homeImageViewProfilePicture"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:padding="7dp"
+            android:layout_marginTop="100dp"
+            android:scaleType="centerInside"
+            android:background="@layout/image_border"
+            />
+
+
+        <TextView
+            android:id="@+id/homeLBLWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/com_facebook_blue"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:text=""
+            android:textSize="30sp"
+            android:background="@color/black"
+            android:alpha="0.8"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+
+            >
+
+            <Button
+                android:id="@+id/homeBTNLogout"
+                android:layout_width="120dp"
+                android:layout_height="55dp"
+                android:text="@string/logout"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"
+
+                />
+
+            <Button
+                android:id="@+id/homeBTNOpenPuzzles"
+                android:layout_width="120dp"
+                android:layout_height="55dp"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentRight="true"
+                android:text="@string/openPuzzles"
+               ></Button>
+
+
+        </RelativeLayout >
+
+
+
+        <TextView
+            android:id="@+id/homeLBLVerifyMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emailNotVerified"
+            android:textColor="#CF1111"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</FrameLayout>

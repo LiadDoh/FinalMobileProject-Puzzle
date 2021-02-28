@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".FragmentScoreboard">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back_home2"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/scoreboardCardViewPlayer3"
+        android:layout_width="180dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"
+        app:cardBackgroundColor="#805858"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="25dp"
+        app:cardUseCompatPadding="false"
+        app:contentPadding="15dp"
+        app:contentPaddingLeft="50sp"
+        app:contentPaddingRight="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreboardCardViewPlayer2"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TextView
+            android:id="@+id/scoreboardLBLTitle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#3 place "
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/scoreboardLBLScore3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="12dp"
+
+            android:text="@string/score_0" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/scoreboardCardViewPlayer2"
+        android:layout_width="180dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="#A69F9F"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="25dp"
+        app:cardUseCompatPadding="false"
+        app:contentPadding="15dp"
+        app:contentPaddingLeft="50sp"
+        app:contentPaddingRight="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreboardCardViewPlayer1"
+        app:layout_constraintVertical_bias="0.0"
+       >
+
+        <TextView
+            android:id="@+id/scoreboardLBLTitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#2 place "
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/scoreboardLBLScore2"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/score_0" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/scoreBoardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score Board"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04000002"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/scoreboardCardViewPlayer1"
+        android:layout_width="180dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="#E88E1E"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="25dp"
+        app:cardUseCompatPadding="false"
+        app:contentPadding="15dp"
+        app:contentPaddingLeft="50sp"
+        app:contentPaddingRight="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreBoardTitle"
+        app:layout_constraintVertical_bias="0.060000002">
+
+        <TextView
+            android:id="@+id/scoreboardLBLTitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#1 place "
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/scoreboardLBLScore1"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/score_0"
+            android:textStyle="bold"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/scoreboardLBLUserScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="TextView"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/scoreboardCardViewPlayer1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreBoardTitle" />
+
+    <ImageView
+        android:id="@+id/scoreboardImageView1"
+        android:layout_width="102dp"
+        android:layout_height="127dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/scoreboardCardViewPlayer1"
+        app:layout_constraintHorizontal_bias="0.989"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreboardLBLUserScore"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/n1" />
+
+    <ImageView
+        android:id="@+id/scoreboardImageView2"
+        android:layout_width="102dp"
+        android:layout_height="127dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/scoreboardCardViewPlayer2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreboardImageView1"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/n2"
+       />
+
+    <ImageView
+        android:id="@+id/scoreboardImageView3"
+        android:layout_width="102dp"
+        android:layout_height="127dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/scoreboardCardViewPlayer3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreboardImageView2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/n3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
